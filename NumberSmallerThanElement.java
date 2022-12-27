@@ -1,7 +1,8 @@
-import java.util.Arrays;
-import java.util.Scanner;
 
 // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class NumberSmallerThanElement {
     public static void main(String[] args) {
@@ -36,7 +37,7 @@ public class NumberSmallerThanElement {
         //     }
         //     ans[i] = count;
         // }
-        
+
         // return ans;
 
 
