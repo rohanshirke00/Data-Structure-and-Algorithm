@@ -24,7 +24,8 @@ public class ProductExceptSelf {
 
     /*
     
-    
+    // brute force
+
     public static int[] productExceptSelf(int[] nums) {
         //creating an array for storing the products
         int[] sol = new int[nums.length];
