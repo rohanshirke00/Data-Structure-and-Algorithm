@@ -62,26 +62,18 @@ public class StackUsingArray {
                 System.out.println("Stack is Empty");
             }
             else {
-                System.out.print("Stack is : ");
+                System.out.print("Stack : ");
                 for (int i = top; i >= 0; i--) {
                     System.out.print(stack[i] + " ");
                 }
                 System.out.println();
+                System.out.println("Stack top is : " + stack[top]);
             }
         }
     
         // check elements present in stack
         public void size(){
             System.out.println("Number of Elements in stack : " + (top + 1));
-        }
-    
-        public void top(){
-            if(top == -1){
-                System.out.println("Stack is Empty");
-            }
-            else{
-                System.out.println("Stack top is : " + stack[top]);
-            }
         }
     
     }
@@ -98,9 +90,8 @@ public class StackUsingArray {
 					+ "Press 1 for Push()\n"
 					+ "Press 2 for Pop()\n"
 					+ "Press 3 for Display()\n"
-                    + "Press 4 for Stack Top()\n"
-                    + "Press 5 for Size()\n"
-                    + "Press 6 for EXIT()\n"
+                    + "Press 4 for Size()\n"
+                    + "Press 5 for EXIT()\n"
                     + "Your Choice :) ");
 			int operation = sc.nextInt();
 			switch(operation) {
@@ -115,16 +106,12 @@ public class StackUsingArray {
 			case 3 :
                 st.display();
 				break;
-			
-			case 4 :
-                st.top();
-				break;
             
-            case 5 :
+            case 4 :
                 st.size();
                 break;
 
-            case 6 :
+            case 5 :
                 System.out.println("Exit Successfully (^__^)");
                 System.exit(0);
 
