@@ -6,7 +6,6 @@ public class StackUsingArray {
     
         int top;
         int stack[];
-        Scanner sc = new Scanner(System.in);
 
         // constructor
         public Stack(int capacity) {
@@ -31,7 +30,7 @@ public class StackUsingArray {
         }
     
         // push function
-        public void push() {
+        public void push(Scanner sc) {
             if(overflow()) {
                 System.out.println("Stack is Full");
             }
@@ -83,7 +82,6 @@ public class StackUsingArray {
 		System.out.print(("Enter the size of the stack : "));
 		int n = sc.nextInt();
 		Stack st = new Stack(n);
-		int choice;
 		do {
             System.out.println();
 			System.out.print("Which operation do you want to perform on stack?\n"
@@ -96,7 +94,7 @@ public class StackUsingArray {
 			int operation = sc.nextInt();
 			switch(operation) {
 			case 1 :
-				st.push();
+				st.push(sc);
 				break;
 			
 			case 2 :
